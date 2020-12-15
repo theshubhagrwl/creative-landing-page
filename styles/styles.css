@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+nav {
+  background-color: #424874;
+  height: 5vh;
+}
+
+nav .nav-item-right {
+  float: right;
+}
+
+nav .nav-item-right a {
+  padding: "0px 40px";
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header {
+  display: -ms-grid;
+  display: grid;
+  height: 95vh;
+  -ms-grid-columns: 60% 40%;
+      grid-template-columns: 60% 40%;
+}
+
+.header .left-container {
+  background-color: #393f64;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 10%;
+}
+
+.header .left-container .heading {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+.header .left-container .sub-heading {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.header .left-container .header-svg {
+  margin-top: 20px;
+  height: 20px;
+}
+
+.header .right-container {
+  background-color: white;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% auto;
+      grid-template-columns: 20% auto;
+  -ms-grid-rows: 100%;
+      grid-template-rows: 100%;
+}
+
+.header .right-container .header-img {
+  display: unset;
+  margin-left: -50%;
+  margin-top: 270px;
+  width: 100%;
+}
+
+.header .right-container .featured-img {
+  height: 500px;
+  width: 500px;
+  margin-top: 40%;
+}
+/*# sourceMappingURL=styles.css.map */
