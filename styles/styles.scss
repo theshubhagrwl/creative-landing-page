@@ -3,18 +3,29 @@
 body {
   font-family: "Poppins", sans-serif;
   margin: 0;
+  height: 100vh;
+  // width: 100vw;
 }
 
-nav {
+header {
   background-color: #424874;
-  //   padding: 10px;
-  height: 5vh;
+  height: 50px;
 
-  .nav-item-right {
+  .nav-item-left {
+    display: inline-block;
+    font-size: 25px;
+    margin-left: 10%;
+    margin-top: 5px;
+    font-weight: 700;
+  }
+
+  nav {
     float: right;
+    padding: 10px 40px;
+    display: inline-block;
 
     a {
-      padding: "0px 40px";
+      margin: 20px;
     }
   }
 
@@ -27,7 +38,7 @@ nav {
 .header {
   display: grid;
   height: 95vh;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 66% auto;
 
   .left-container {
     background-color: #393f64;
@@ -50,7 +61,7 @@ nav {
       font-weight: 300;
     }
 
-    .header-svg {
+    .header-svg img {
       margin-top: 20px;
       height: 20px;
     }
@@ -61,18 +72,17 @@ nav {
     display: grid;
     grid-template-columns: 20% auto;
     grid-template-rows: 100%;
+    align-items: center;
 
     .header-img {
       display: unset;
       margin-left: -50%;
-      margin-top: 270px;
       width: 100%;
     }
 
     .featured-img {
-      height: 500px;
-      width: 500px;
-      margin-top: 40%;
+      height: 400px;
+      width: 400px;
     }
   }
 }

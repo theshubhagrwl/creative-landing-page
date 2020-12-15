@@ -2,22 +2,33 @@
 body {
   font-family: "Poppins", sans-serif;
   margin: 0;
+  height: 100vh;
 }
 
-nav {
+header {
   background-color: #424874;
-  height: 5vh;
+  height: 50px;
 }
 
-nav .nav-item-right {
+header .nav-item-left {
+  display: inline-block;
+  font-size: 25px;
+  margin-left: 10%;
+  margin-top: 5px;
+  font-weight: 700;
+}
+
+header nav {
   float: right;
+  padding: 10px 40px;
+  display: inline-block;
 }
 
-nav .nav-item-right a {
-  padding: "0px 40px";
+header nav a {
+  margin: 20px;
 }
 
-nav a {
+header a {
   color: #fff;
   text-decoration: none;
 }
@@ -26,8 +37,8 @@ nav a {
   display: -ms-grid;
   display: grid;
   height: 95vh;
-  -ms-grid-columns: 60% 40%;
-      grid-template-columns: 60% 40%;
+  -ms-grid-columns: 66% auto;
+      grid-template-columns: 66% auto;
 }
 
 .header .left-container {
@@ -61,7 +72,7 @@ nav a {
   font-weight: 300;
 }
 
-.header .left-container .header-svg {
+.header .left-container .header-svg img {
   margin-top: 20px;
   height: 20px;
 }
@@ -74,18 +85,19 @@ nav a {
       grid-template-columns: 20% auto;
   -ms-grid-rows: 100%;
       grid-template-rows: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header .right-container .header-img {
   display: unset;
   margin-left: -50%;
-  margin-top: 270px;
   width: 100%;
 }
 
 .header .right-container .featured-img {
-  height: 500px;
-  width: 500px;
-  margin-top: 40%;
+  height: 400px;
+  width: 400px;
 }
 /*# sourceMappingURL=styles.css.map */
