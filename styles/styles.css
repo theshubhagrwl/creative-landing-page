@@ -20,12 +20,12 @@ header .nav-item-left {
 
 header nav {
   float: right;
-  padding: 10px 40px;
+  padding: 12px 40px;
   display: inline-block;
 }
 
 header nav a {
-  margin: 20px;
+  margin: 0px 10px;
 }
 
 header a {
@@ -33,7 +33,7 @@ header a {
   text-decoration: none;
 }
 
-.header {
+.hero {
   display: -ms-grid;
   display: grid;
   height: 95vh;
@@ -41,7 +41,7 @@ header a {
       grid-template-columns: 66% auto;
 }
 
-.header .left-container {
+.hero .left-container {
   background-color: #393f64;
   color: #fff;
   display: -webkit-box;
@@ -60,24 +60,32 @@ header a {
   padding-left: 10%;
 }
 
-.header .left-container .heading {
+.hero .left-container .heading {
   font-size: 60px;
   font-weight: 700;
   line-height: 100%;
 }
 
-.header .left-container .sub-heading {
+.hero .left-container .sub-heading {
   margin-top: 20px;
   font-size: 20px;
   font-weight: 300;
 }
 
-.header .left-container .header-svg img {
+.hero .left-container .hero-svg img {
   margin-top: 20px;
   height: 20px;
 }
 
-.header .right-container {
+.hero .left-container .hero-svg:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  margin-left: 10px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.hero .right-container {
   background-color: white;
   display: -ms-grid;
   display: grid;
@@ -90,14 +98,36 @@ header a {
           align-items: center;
 }
 
-.header .right-container .header-img {
+.hero .right-container .hero-img {
   display: unset;
   margin-left: -50%;
   width: 100%;
 }
 
-.header .right-container .featured-img {
-  height: 400px;
-  width: 400px;
+.hero .right-container .featured-img {
+  width: 20vw;
+}
+
+@media all and (max-width: 800px) {
+  .hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #393f64;
+    height: 95vh;
+  }
+  .right-container {
+    visibility: hidden;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
