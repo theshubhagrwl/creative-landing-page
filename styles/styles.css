@@ -5,27 +5,53 @@ body {
   height: 100vh;
 }
 
+#hamburger {
+  margin-right: 10%;
+  display: none;
+  color: white;
+  cursor: pointer;
+}
+
 header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   background-color: #424874;
-  height: 50px;
+  padding: 10px 0px;
 }
 
 header .nav-item-left {
-  display: inline-block;
   font-size: 25px;
   margin-left: 10%;
-  margin-top: 5px;
   font-weight: 700;
 }
 
 header nav {
-  float: right;
   padding: 12px 40px;
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 15px;
 }
 
 header nav a {
-  margin: 0px 10px;
+  padding: 0px 10px;
 }
 
 header a {
@@ -108,7 +134,18 @@ header a {
   width: 20vw;
 }
 
-@media all and (max-width: 800px) {
+@media screen and (max-width: 768px) {
+  #hamburger {
+    display: block;
+  }
+  .nav-item-right {
+    display: none;
+  }
+  .nav-item-right.show {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .hero {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -125,6 +162,25 @@ header a {
             justify-content: center;
     background-color: #393f64;
     height: 95vh;
+  }
+  .hero .left-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 7%;
+  }
+  .hero .left-container .heading {
+    font-size: 45px;
   }
   .right-container {
     visibility: hidden;
